@@ -23,7 +23,7 @@
       align-items: center;
       background: hsl(233, 47%, 7%);
       font-family: 'Inter', sans-serif;
-      color: rgb(255, 255, 255);
+      color: hsl(0, 0%, 100%);
     }
     .container {
       max-width: 1080px;
@@ -52,15 +52,20 @@
       border-radius: 0 8px 8px 0;
     }
     .stats {
-      margin-top: 60px;
+      margin-top: 70px;
       display: flex;
       gap: 50px;
-      color: hsla(0, 0%, 100%, 0.6);
     }
     .stats-a {
       font-size: 24px;
       font-weight: bold;
-      color: hsla(0, 0%, 100%, 0.75);
+      color: hsl(0, 0%, 100%);
+      margin-bottom: 8px;
+    }
+    .stats-b {
+      color: hsla(0, 0%, 100%, 0.6);
+      font-size: 15px;
+      text-transform: uppercase;
     }
     .attribution {
       margin-top: 50px;
@@ -85,15 +90,15 @@
       <div class="stats">
         <div>
           <div class="stats-a">10k+</div>
-          <div>companies</div>
+          <div class="stats-b">companies</div>
         </div>
         <div>
           <div class="stats-a">314</div>
-          <div>templates</div>
+          <div class="stats-b">templates</div>
         </div>
         <div>
           <div class="stats-a">12M+</div>
-          <div>queries</div>
+          <div class="stats-b">queries</div>
         </div>
       </div>
     </div>

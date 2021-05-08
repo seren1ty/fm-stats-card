@@ -15,6 +15,7 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body {
+      margin: 0;
       width: 1440px;
       height: 100vh;
       display: flex;
@@ -25,12 +26,12 @@
       font-family: 'Inter', sans-serif;
       color: hsl(0, 0%, 100%);
     }
+
     .container {
       max-width: 1080px;
       display: flex;
     }
     .main-left {
-      padding: 50px 70px;
       background-color: hsl(244, 38%, 16%);
       border-radius: 8px 0 0 8px;
     }
@@ -42,14 +43,6 @@
       font-size: 15px;
       color: hsla(0, 0%, 100%, 0.75);
       line-height: 25px;
-    }
-    .main-right {
-      min-width: 540px;
-      min-height: 446px;
-      background-color: hsl(277, 36%, 41%);
-      background-image: url(images/image-header-desktop.jpg);
-      background-blend-mode: overlay;
-      border-radius: 0 8px 8px 0;
     }
     .stats {
       margin-top: 70px;
@@ -67,6 +60,11 @@
       font-size: 15px;
       text-transform: uppercase;
     }
+    .main-right {
+      background-color: hsl(277, 36%, 41%);
+      background-blend-mode: overlay;
+      background-repeat: no-repeat;
+    }
     .attribution {
       margin-top: 50px;
       font-size: 11px;
@@ -74,6 +72,62 @@
     }
     .attribution a {
       color: hsl(228, 45%, 44%);
+    }
+
+    @media (min-width: 1081px) {
+      .main-left {
+        padding: 50px 70px;
+      }
+
+      .main-right {
+        min-width: 540px;
+        min-height: 446px;
+        background-image: url(images/image-header-desktop.jpg);
+        border-radius: 0 8px 8px 0;
+      }
+    }
+
+    @media (max-width: 1080px) {
+      body {
+        margin: auto;
+        width: 375px;
+        height: auto;
+      }
+
+      .container {
+        flex-direction: column-reverse;
+        max-width: 375px;
+      }
+
+      .main-left {
+        min-width: 375px;
+        max-width: 375px;
+        text-align: center;
+      }
+
+      h1 {
+        padding: 0 30px;
+      }
+
+      p {
+        padding: 0 40px;
+      }
+
+      .stats {
+        margin-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding-bottom: 20px;
+      }
+
+      .main-right {
+        width: 375px;
+        height: 300px;
+        background-image: url(images/image-header-mobile.jpg);
+        background-size: 375px 300px;
+        border-radius: 8px 8px 0 0;
+      }
     }
   </style>
 </head>
@@ -102,8 +156,7 @@
         </div>
       </div>
     </div>
-    <div class="main-right">
-    </div>
+    <div class="main-right"></div>
   </div>
 
   <div class="attribution">

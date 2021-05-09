@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <link rel="stylesheet" href="index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Stats preview card component</title>
@@ -11,125 +12,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    body {
-      margin: 0;
-      width: 1440px;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      background: hsl(233, 47%, 7%);
-      font-family: 'Inter', sans-serif;
-      color: hsl(0, 0%, 100%);
-    }
-
-    .container {
-      max-width: 1080px;
-      display: flex;
-    }
-    .main-left {
-      background-color: hsl(244, 38%, 16%);
-      border-radius: 8px 0 0 8px;
-    }
-    .purple {
-      color: hsl(277, 64%, 61%)
-    }
-    p {
-      font-family: 'Lexend Deca', sans-serif;
-      font-size: 15px;
-      color: hsla(0, 0%, 100%, 0.75);
-      line-height: 25px;
-    }
-    .stats {
-      margin-top: 70px;
-      display: flex;
-      gap: 50px;
-    }
-    .stats-a {
-      font-size: 24px;
-      font-weight: bold;
-      color: hsl(0, 0%, 100%);
-      margin-bottom: 8px;
-    }
-    .stats-b {
-      color: hsla(0, 0%, 100%, 0.6);
-      font-size: 15px;
-      text-transform: uppercase;
-    }
-    .main-right {
-      background-color: hsl(277, 36%, 41%);
-      background-blend-mode: overlay;
-      background-repeat: no-repeat;
-    }
-    .attribution {
-      margin-top: 50px;
-      font-size: 11px;
-      text-align: center;
-    }
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-
-    @media (min-width: 1081px) {
-      .main-left {
-        padding: 50px 70px;
-      }
-
-      .main-right {
-        min-width: 540px;
-        min-height: 446px;
-        background-image: url(images/image-header-desktop.jpg);
-        border-radius: 0 8px 8px 0;
-      }
-    }
-
-    @media (max-width: 1080px) {
-      body {
-        margin: auto;
-        width: 375px;
-        height: auto;
-      }
-
-      .container {
-        flex-direction: column-reverse;
-        max-width: 375px;
-      }
-
-      .main-left {
-        min-width: 375px;
-        max-width: 375px;
-        text-align: center;
-      }
-
-      h1 {
-        padding: 0 30px;
-      }
-
-      p {
-        padding: 0 40px;
-      }
-
-      .stats {
-        margin-top: 30px;
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding-bottom: 20px;
-      }
-
-      .main-right {
-        width: 375px;
-        height: 300px;
-        background-image: url(images/image-header-mobile.jpg);
-        background-size: 375px 300px;
-        border-radius: 8px 8px 0 0;
-      }
-    }
-  </style>
 </head>
 <body>
 
